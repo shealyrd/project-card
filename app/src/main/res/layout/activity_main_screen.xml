@@ -1,0 +1,134 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainScreen.MainScreenActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <com.example.evan.projectcard.GameScreen.Views.GameScreenBackgroundView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="0dp"
+        />
+
+    <com.example.evan.projectcard.MainScreen.MainActivityButtonListView
+        android:gravity="center"
+        android:id="@+id/button_holder_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@raw/project_card_logo"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.SinglePlayerButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.MultiPlayerButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.DeckManagerButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.ContentUpdatesButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <!--
+        <com.example.evan.projectcard.MainScreen.Buttons.OptionsButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />-->
+
+    </com.example.evan.projectcard.MainScreen.MainActivityButtonListView>
+
+    <com.example.evan.projectcard.MainScreen.MainActivityButtonListView
+        android:gravity="center"
+        android:id="@+id/button_holder_multi"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <com.example.evan.projectcard.MainScreen.Buttons.BluetoothButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.OnlineButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    </com.example.evan.projectcard.MainScreen.MainActivityButtonListView>
+
+    <com.example.evan.projectcard.MainScreen.MainActivityButtonListView
+        android:gravity="center"
+        android:id="@+id/button_holder_options"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <com.example.evan.projectcard.MainScreen.Buttons.MusicButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            />
+
+        <com.example.evan.projectcard.MainScreen.Buttons.ChangeAIStrategyButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    </com.example.evan.projectcard.MainScreen.MainActivityButtonListView>
+
+</RelativeLayout>
+

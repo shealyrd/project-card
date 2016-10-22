@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.evan.projectcard.Utilities.VerticalTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="100%"
+        android:text="MY NAME"
+        android:id="@+id/name_column"
+        />
+
+    <include layout="@layout/resource_column"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="100%"
+        android:layout_toRightOf="@id/name_column"
+        android:id="@+id/res1"/>
+
+    <include layout="@layout/resource_column"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="100%"
+        android:layout_toRightOf="@id/res1"
+        android:id="@+id/res2"/>
+
+    <include layout="@layout/resource_column"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="100%"
+        android:layout_toRightOf="@id/res2"
+        android:id="@+id/res3"/>
+
+    <include layout="@layout/resource_column"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="100%"
+        android:layout_toRightOf="@id/res3"
+        android:id="@+id/res4"/>
+
+    <include layout="@layout/resource_column"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="100%"
+        android:layout_toRightOf="@id/res4"
+        android:id="@+id/res5"/>
+
+
+
+</android.support.percent.PercentRelativeLayout>

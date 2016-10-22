@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/game_screen"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    >
+    <com.example.evan.projectcard.GameScreen.Views.GameScreenBackgroundView
+        android:layout_width="match_parent"
+        android:id="@+id/game_screen_child1"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/test_spin"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@raw/game_start_text"
+        android:layout_centerVertical="true"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:background="#FF456833"
+        android:id="@+id/top_bar"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="10%"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/p1ResourceBar"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%"
+            android:layout_alignParentLeft="true"
+            >
+            <com.example.evan.projectcard.Utilities.VerticalTextView
+                android:id="@+id/p1ResourceBar_child1"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                android:text="MY NAME"
+                android:gravity="center"
+                app:layout_widthPercent="20%"
+                android:layout_alignParentLeft="true"
+                />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child2"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child1"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child2_child1"
+                    app:layout_heightPercent="20%"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_basic"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child2_child2"
+                    android:text="0"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child3"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child2"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child3_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_fire"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/p1ResourceBar_child3_child2"
+                    android:text="0"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child4"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child3"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child4_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_lightning"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child4_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child5"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child4"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child5_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_water"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child5_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child6"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child5"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child6_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_hand"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child6_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p1ResourceBar_child7"
+                android:background="@drawable/card_info_dialog_text_border"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p1ResourceBar_child6"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child7_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_deck"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p1ResourceBar_child7_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:background="#00123456"
+            android:id="@+id/p2ResourceBar"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%"
+            android:layout_alignParentRight="true"
+            >
+            <com.example.evan.projectcard.Utilities.VerticalTextView
+                android:id="@+id/p2ResourceBar_child1"
+                android:layout_height="match_parent"
+                android:text="MY NAME"
+                android:gravity="center"
+                android:background="@drawable/card_info_dialog_text_border"
+                app:layout_widthPercent="20%"
+                android:layout_alignParentLeft="true"
+                />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child2"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child1"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child2_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_basic"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child2_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child3"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child2"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child3_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_fire"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child3_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child4"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child3"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child4_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_lightning"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child4_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child5"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child4"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child5_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_water"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child5_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child6"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child5"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child6_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_hand"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child6_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/p2ResourceBar_child7"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="14%"
+                android:background="@drawable/card_info_dialog_text_border"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toRightOf="@+id/p2ResourceBar_child6"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child7_child1"
+                    app:layout_heightPercent="20%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_deck"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/p2ResourceBar_child7_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="80%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/cell_area"
+        app:layout_widthPercent="80%"
+        android:layout_below="@id/top_bar"
+        app:layout_heightPercent="71%"
+        android:layout_alignParentLeft="true"
+        >
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell1"
+            app:layout_widthPercent="33%"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            android:layout_alignParentLeft="true"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell2"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/cell1"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell3"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/cell2"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell4"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell1"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell5"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell2"
+            android:layout_toRightOf="@id/cell4"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            android:layout_toEndOf="@id/cell4"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell6"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell3"
+            android:layout_toRightOf="@id/cell5"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            android:layout_toEndOf="@id/cell5"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell7"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell4"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell8"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell5"
+            android:layout_toRightOf="@id/cell7"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            android:layout_toEndOf="@id/cell7"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell9"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell6"
+            android:layout_toRightOf="@id/cell8"
+            app:layout_heightPercent="16%"
+            android:src="@raw/red_cell"
+            android:layout_toEndOf="@id/cell8"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell10"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell7"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell11"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell8"
+            android:layout_toRightOf="@id/cell10"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell10"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell12"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell9"
+            android:layout_toRightOf="@id/cell11"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell11"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell13"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell10"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell14"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell11"
+            android:layout_toRightOf="@id/cell13"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell13"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell15"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell12"
+            android:layout_toRightOf="@id/cell14"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell14"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell16"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell13"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell17"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell14"
+            android:layout_toRightOf="@id/cell16"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell16"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.CellView
+            android:id="@+id/cell18"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/cell15"
+            android:layout_toRightOf="@id/cell17"
+            app:layout_heightPercent="16%"
+            android:src="@raw/green_cell"
+            android:layout_toEndOf="@id/cell17"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <ScrollView
+        android:id="@+id/hand_view"
+        app:layout_widthPercent="20%"
+        android:padding="0dp"
+        android:layout_below="@id/top_bar"
+        android:layout_alignParentRight="true"
+        android:clipToPadding="true"
+        app:layout_heightPercent="70%"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/hand_container"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:orientation="vertical"
+            />
+
+    </ScrollView>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_bar"
+        app:layout_widthPercent="100%"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="20%"
+        >
+        <ImageView
+            android:id="@+id/deck"
+            app:layout_widthPercent="20%"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="100%"
+            android:src="@raw/deck"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/drawn_card"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/draw_alert"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:src="@raw/drawtext"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.percent.PercentRelativeLayout
+            android:background="@raw/log_background"
+            android:layout_width="match_parent"
+            android:id="@+id/log_container"
+            app:layout_widthPercent="80%"
+            android:padding="0dp"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="100%"
+            android:layout_alignParentLeft="true"
+            >
+            <com.example.evan.projectcard.GameScreen.Views.GameLogView
+                android:id="@+id/logview"
+                android:textSize="10sp"
+                app:layout_widthPercent="80%"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="70%"
+                android:textColor="#FF000000"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

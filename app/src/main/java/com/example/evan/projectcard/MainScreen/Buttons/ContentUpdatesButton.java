@@ -1,0 +1,39 @@
+package com.example.evan.projectcard.MainScreen.Buttons;
+
+import android.content.Context;
+import android.content.Intent;
+import android.util.AttributeSet;
+import android.view.View;
+
+import com.example.evan.projectcard.Update.DownloadablesActivity;
+
+/**
+ * Created by Evan on 9/21/2016.
+ */
+public class ContentUpdatesButton extends MainScreenButton {
+
+    public ContentUpdatesButton(Context context) {
+        super(context);
+    }
+
+    public ContentUpdatesButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public ContentUpdatesButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    @Override
+    public void setValues() {
+        setText("Downloadables");
+        setOnClick(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), DownloadablesActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
+
+    }
+}

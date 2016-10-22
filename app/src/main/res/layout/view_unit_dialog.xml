@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/base"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/topArea"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="40%"
+        android:layout_alignParentTop="true"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/imageArea"
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="100%"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/cardImg"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/statArea"
+            app:layout_widthPercent="60%"
+            app:layout_heightPercent="50%"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/hpView"
+                app:layout_widthPercent="33%"
+                app:layout_heightPercent="100%"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/apView"
+                android:layout_toRightOf="@+id/hpView"
+                app:layout_widthPercent="33%"
+                android:gravity="center"
+                app:layout_heightPercent="100%"
+                />
+
+            <TextView
+                android:id="@+id/atkView"
+                app:layout_widthPercent="34%"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                app:layout_heightPercent="100%"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/keywordArea"
+            app:layout_widthPercent="60%"
+            android:layout_below="@+id/statArea"
+            app:layout_heightPercent="50%"
+            android:layout_alignParentRight="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/keywordContainer"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="100%"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:layout_above="@+id/itemArea"
+        android:background="@drawable/card_info_dialog_text_border"
+        android:id="@+id/midText"
+        android:gravity="center"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="25%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/itemArea"
+        app:layout_widthPercent="100%"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="35%"
+        >
+        <TextView
+            android:id="@+id/itemIcon"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="100%"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="Items: "
+            />
+
+        <ScrollView
+            android:id="@+id/itemScroll"
+            app:layout_widthPercent="80%"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/itemContainer"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+
+        </ScrollView>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

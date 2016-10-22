@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/base"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_area"
+        app:layout_heightPercent="90%"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/available_area"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%"
+            android:layout_alignParentLeft="true"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#FF651179"
+                android:id="@+id/available_text"
+                app:layout_heightPercent="10%"
+                android:layout_alignParentTop="true"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/available_list"
+                android:layout_alignParentBottom="true"
+                app:layout_heightPercent="90%"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/current_area"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#FF884632"
+                android:id="@+id/current_text"
+                app:layout_heightPercent="10%"
+                android:layout_alignParentTop="true"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/current_list"
+                android:layout_alignParentBottom="true"
+                app:layout_heightPercent="90%"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FF900903"
+        android:id="@+id/bottom_area"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="10%"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="#FF738593"
+            android:id="@+id/bottom_text"
+            android:layout_height="match_parent"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

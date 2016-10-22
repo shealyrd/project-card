@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="fill_parent"
+    android:id="@+id/base"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/top_region"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="10%"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/name_region"
+            android:textSize="20sp"
+            app:layout_widthPercent="50%"
+            android:text="Name"
+            android:gravity="center"
+            app:layout_heightPercent="100%"
+            />
+
+        <android.support.percent.PercentRelativeLayout
+            android:background="@drawable/card_info_dialog_text_border"
+            android:layout_width="match_parent"
+            android:id="@+id/cost_bar"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%"
+            android:layout_toRightOf="@id/name_region"
+            app:layout_heightPercent="100%"
+            >
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/basic_column"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="25%"
+                android:layout_toRightOf="@+id/cost_text"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/basic_column_child1"
+                    app:layout_heightPercent="40%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_basic"
+                    android:paddingTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/basic_column_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="60%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/fire_column"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="25%"
+                android:layout_toRightOf="@+id/basic_column"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/fire_column_child1"
+                    app:layout_heightPercent="40%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_fire"
+                    android:paddingTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/fire_column_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="60%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/water_column"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="25%"
+                android:layout_toRightOf="@+id/fire_column"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/water_column_child1"
+                    app:layout_heightPercent="40%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_water"
+                    android:paddingTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/water_column_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="60%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lightning_column"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="25%"
+                android:layout_toRightOf="@+id/water_column"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/lightning_column_child1"
+                    app:layout_heightPercent="40%"
+                    android:layout_alignParentTop="true"
+                    android:src="@raw/resource_lightning"
+                    android:paddingTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/lightning_column_child2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    app:layout_heightPercent="60%"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/img_region"
+        app:layout_widthPercent="100%"
+        android:layout_below="@id/top_region"
+        app:layout_heightPercent="40%"
+        >
+        <ImageView
+            android:id="@+id/card_picture"
+            app:layout_widthPercent="90%"
+            app:layout_heightPercent="100%"
+            android:layout_centerHorizontal="true"
+            android:src="@raw/card_back"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/stat_region"
+        app:layout_widthPercent="100%"
+        android:layout_below="@id/img_region"
+        app:layout_heightPercent="10%"
+        >
+        <TextView
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/atk_region"
+            android:textSize="15sp"
+            app:layout_widthPercent="33%"
+            android:text="ATK"
+            android:gravity="center"
+            app:layout_heightPercent="100%"
+            />
+
+        <TextView
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/ap_region"
+            android:textSize="15sp"
+            app:layout_widthPercent="33%"
+            android:text="AP"
+            android:layout_toRightOf="@id/atk_region"
+            android:gravity="center"
+            app:layout_heightPercent="100%"
+            />
+
+        <TextView
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/hp_region"
+            android:textSize="15sp"
+            app:layout_widthPercent="34%"
+            android:text="HP"
+            android:layout_toRightOf="@id/ap_region"
+            android:gravity="center"
+            app:layout_heightPercent="100%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:background="@drawable/card_info_dialog_text_border"
+        android:id="@+id/info_region"
+        android:textSize="20sp"
+        app:layout_widthPercent="100%"
+        android:layout_below="@id/stat_region"
+        android:gravity="center"
+        app:layout_heightPercent="30%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/keyword_region"
+        app:layout_widthPercent="100%"
+        android:layout_below="@id/info_region"
+        app:layout_heightPercent="10%"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/keyword_container"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/keyword_text_region"
+            />
+
+        <TextView
+            android:background="@drawable/card_info_dialog_text_border"
+            android:id="@+id/keyword_text_region"
+            android:textSize="15sp"
+            app:layout_widthPercent="33%"
+            android:text="Keywords"
+            android:gravity="center"
+            app:layout_heightPercent="100%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

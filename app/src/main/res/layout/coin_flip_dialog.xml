@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/base"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    >
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:id="@+id/top_text"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentTop="true"
+        android:src="@raw/call_it_text"
+        />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:id="@+id/result_text"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        />
+    <android.support.percent.PercentRelativeLayout
+        app:layout_widthPercent="100%"
+        android:id="@+id/flip_container"
+        android:layout_above="@+id/bottom_container"
+        app:layout_heightPercent="50%"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        >
+        <ImageView
+            android:id="@+id/coin_flip_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/slide_up_arrow"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/flip_area"
+            android:visibility = "gone"/>
+
+    <android.support.percent.PercentRelativeLayout
+        app:layout_widthPercent="30%"
+        android:id="@+id/flip_area"
+        app:layout_heightPercent="50%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+    >
+
+    <com.example.evan.projectcard.GameScreen.Views.CoinFlipView
+        android:layout_width="wrap_content"
+        android:id="@+id/coin_flip"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        />
+
+    </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_container"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="25%"
+        android:clipChildren="false"
+        >
+        <com.example.evan.projectcard.GameScreen.Views.HeadsTailsButtonView
+            android:background="@drawable/card_info_dialog_text_border"
+            app:layout_widthPercent="50%"
+            android:id="@+id/heads_button"
+            android:layout_height="match_parent"
+            android:src="@raw/heads_text"
+            />
+
+        <com.example.evan.projectcard.GameScreen.Views.HeadsTailsButtonView
+            android:background="@drawable/card_info_dialog_text_border"
+            app:layout_widthPercent="50%"
+            android:id="@+id/tails_button"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/heads_button"
+            android:src="@raw/tails_text"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
